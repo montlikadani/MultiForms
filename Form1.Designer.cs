@@ -74,26 +74,26 @@
             this.módosításToolStripMenuItem,
             this.törlésToolStripMenuItem});
             this.tanulókToolStripMenuItem.Name = "tanulókToolStripMenuItem";
-            this.tanulókToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.tanulókToolStripMenuItem.Text = "Gyümölcsök";
+            this.tanulókToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.tanulókToolStripMenuItem.Text = "Szerkesztés";
             // 
             // newFruit
             // 
             this.newFruit.Name = "newFruit";
-            this.newFruit.Size = new System.Drawing.Size(180, 22);
+            this.newFruit.Size = new System.Drawing.Size(129, 22);
             this.newFruit.Text = "Új";
             this.newFruit.Click += new System.EventHandler(this.newFruit_Click);
             // 
             // módosításToolStripMenuItem
             // 
             this.módosításToolStripMenuItem.Name = "módosításToolStripMenuItem";
-            this.módosításToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.módosításToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.módosításToolStripMenuItem.Text = "Módosítás";
             // 
             // törlésToolStripMenuItem
             // 
             this.törlésToolStripMenuItem.Name = "törlésToolStripMenuItem";
-            this.törlésToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.törlésToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.törlésToolStripMenuItem.Text = "Törlés";
             // 
             // gyumolcsList
@@ -203,6 +203,7 @@
             this.updateFruit.TabIndex = 13;
             this.updateFruit.Text = "Gyümölcs módosítása";
             this.updateFruit.UseVisualStyleBackColor = true;
+            this.updateFruit.Click += new System.EventHandler(this.updateFruit_Click);
             // 
             // removeFruit
             // 
@@ -217,6 +218,7 @@
             this.removeFruit.TabIndex = 14;
             this.removeFruit.Text = "Gyümölcs eltávolítása";
             this.removeFruit.UseVisualStyleBackColor = false;
+            this.removeFruit.Click += new System.EventHandler(this.removeFruit_Click);
             // 
             // NyitoForm
             // 
@@ -238,8 +240,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NyitoForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -261,7 +264,6 @@
         private System.Windows.Forms.ToolStripMenuItem newFruit;
         private System.Windows.Forms.ToolStripMenuItem módosításToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem törlésToolStripMenuItem;
-        private System.Windows.Forms.ListBox gyumolcsList;
         private System.Windows.Forms.TextBox IdBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -273,6 +275,7 @@
         private System.Windows.Forms.Button addNewFruit;
         private System.Windows.Forms.Button updateFruit;
         private System.Windows.Forms.Button removeFruit;
+        public System.Windows.Forms.ListBox gyumolcsList;
     }
 }
 

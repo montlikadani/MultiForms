@@ -3,10 +3,10 @@
 
         public readonly int Id;
         public readonly string Name;
-        public readonly int Egysegar;
+        public readonly decimal Egysegar;
         public readonly int Mennyiseg;
 
-        public Fruit(int id, string name, int egysegar, int mennyiseg) {
+        public Fruit(int id, string name, decimal egysegar, int mennyiseg) {
             Id = id;
             Name = name;
             Egysegar = egysegar;
