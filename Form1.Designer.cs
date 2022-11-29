@@ -80,21 +80,23 @@
             // newFruit
             // 
             this.newFruit.Name = "newFruit";
-            this.newFruit.Size = new System.Drawing.Size(129, 22);
+            this.newFruit.Size = new System.Drawing.Size(180, 22);
             this.newFruit.Text = "Új";
             this.newFruit.Click += new System.EventHandler(this.newFruit_Click);
             // 
             // módosításToolStripMenuItem
             // 
             this.módosításToolStripMenuItem.Name = "módosításToolStripMenuItem";
-            this.módosításToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.módosításToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.módosításToolStripMenuItem.Text = "Módosítás";
+            this.módosításToolStripMenuItem.Click += new System.EventHandler(this.updateFruit_Click);
             // 
             // törlésToolStripMenuItem
             // 
             this.törlésToolStripMenuItem.Name = "törlésToolStripMenuItem";
-            this.törlésToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.törlésToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.törlésToolStripMenuItem.Text = "Törlés";
+            this.törlésToolStripMenuItem.Click += new System.EventHandler(this.removeFruit_Click);
             // 
             // gyumolcsList
             // 
